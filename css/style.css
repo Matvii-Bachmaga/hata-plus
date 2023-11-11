@@ -1,0 +1,425 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+sup {
+    font-size: 0.6em;
+}
+
+.wrapper {
+    margin: auto;
+    max-width: 960px;
+}
+
+.header-line {
+    padding: 16px 0;
+    background-color: #1f1f56;
+}
+
+.header-line_nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -12px;
+}
+
+.header-line_nav ul {
+    padding-left: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.header-line li {
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.header-line a {
+    display: inline-block;
+    padding: 0 12px;
+    color: #b1b2d1;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.header-line_nav a:hover {
+    color: #fd8300;
+}
+
+.header-info {
+    display: inline;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button a:hover {
+    color: #fd8300;
+}
+
+.button a {
+    transition: all 1s ease;
+}
+
+.social-networks a:hover {
+    transform: scale(1.2);
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info a {
+    text-decoration: none;
+    color: #25252c;
+}
+
+.email a {
+    text-decoration: underline;
+}
+
+.email-skype p {
+    margin: 0;
+}
+
+.phone a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;  
+}
+
+.phone img,
+.email-skype img {
+    margin-right: 12px;
+}
+
+.phone a:last-child {
+    padding-left: 27px;
+}
+
+.email a {
+    margin-bottom: 15px;
+}
+
+.email-skype p,
+.skype a {
+    margin-bottom: 10px;
+}
+
+.button a {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px;
+    width: 200px;
+    font-size: 16px;
+    border-radius: 25px;
+    color: #25252c;
+    background-color: #ffffff;
+    border: 2px solid #fd8300;
+    box-sizing: border-box;
+}
+
+.main-picture {
+    text-align: center;
+    padding: 55px 0;
+    background: url(../img/picture.png);
+    background-size: cover;
+    background-color: black;
+    opacity: 0.9;
+}
+
+.about-company {
+    margin-bottom: 45px;
+}
+
+.text p {
+    width: 677px;
+    font-size: 14px;
+    color: #666666;
+}
+
+.text h1 {
+    font-size: 30px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.header-text a {
+    font-size: 14px;
+    color: #fd8300;
+    font-weight: bold;
+}
+
+.header-text {
+    margin-bottom: 34px;
+}
+
+.hr {
+    margin-bottom: 25px;
+    border-bottom: 1px solid color #e4e4ec;
+}
+
+.flex {
+    display: flex;
+    padding-top: 38px;
+}
+
+.offer b {
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.offer p {
+    font-family: 'Roboto Slab', serif;
+    ;
+}
+
+.offer i {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.price b {
+    font-size: 40px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+}
+
+.price i {
+    font-size: 24px;
+    line-height: 24px;
+    color: #fd8300;
+    font-weight: bold;
+}
+
+.main-houses {
+    display: flex;
+}
+
+.houses figure {
+    margin: 0;
+}
+
+.houses-for-sale a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #1f1f56;
+    font-weight: bold;
+    font-family: "Arial";
+}
+
+.houses-for-sale a:hover {
+    text-decoration: underline;
+}
+
+.houses-for-sale p {
+    margin: 0;
+    margin-bottom: 3px;
+    font-size: 13px;
+    color: #9999a6;
+    font-family: "Arial";
+}
+
+figcaption h3 {
+    padding-top: 7px;
+}
+
+.around p {
+    margin: 0;
+    background-color: #1f1f56;
+    color: #fff;
+    padding: 15px;
+}
+
+.around a:hover {
+    background-color: #fd8300;
+    color: #fff;
+    border-color: transparent;
+}
+
+.around li {
+    width: 100%;
+}
+
+.around li:last-child a {
+    border: none;
+}
+
+.open {
+    display: none;
+}
+
+aside .open a {
+    padding-left: 30px;
+    color: #666;
+}
+
+.open a:hover {
+    background-color: #cecedd;
+}
+
+.around {
+    height: min-content;
+    width: 220px;
+    background-color: #e4e4ec;
+}
+
+li:hover ul {
+    display: block;
+}
+
+.around ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.around a {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    text-decoration: none;
+    color: #25252c;
+    border-bottom: 1px solid #cdcddd;
+}
+
+span {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border: 1px solid #666;
+    transform: rotate(-45deg);
+    border-top-color: transparent;
+    border-left-color: transparent;
+    transition: .5s;
+}
+
+li :hover span {
+    transform: rotate(45deg);
+}
+
+.one-part a:hover {
+    text-decoration: underline;
+    color: #fd8300;
+}
+
+.two-part a:hover {
+    text-decoration: underline;
+    color: #fd8300;
+}
+
+.houses h2 {
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.houses-for-sale {
+    display: flex;
+}
+
+.houses-for-sale figure {
+    margin: 0;
+}
+
+.two figcaption {
+    padding: 0 30px;
+}
+
+.general li {
+    list-style: none;
+    color: #666666;
+    text-decoration: none;
+}
+
+.general {
+    background-color: #ededf5;
+}
+
+.general,
+.flex {
+    justify-content: space-between;
+}
+
+.general a {
+    text-decoration: none;
+    color: #666;
+}
+
+.general li {
+    padding-right: 40px;
+}
+
+.general ul {
+    margin: 0;
+    padding: 0;
+}
+
+.find {
+    padding: 35px;
+}
+
+.find li {
+    margin-bottom: 5px;
+}
+
+.phones {
+    margin: 0;
+}
+
+.phones a {
+    display: block;
+    color: #25252c;
+    font-size: 16px;
+}
+
+.mails-skypes a {
+    color: #25252c;
+}
+
+
+.phones a:last-child {
+    padding-left: 17px;
+}
+
+.mail a {
+    text-decoration: underline;
+}
+
+.mails-skypes p {
+    margin: 0;
+    margin-bottom: 14px;
+}
+
+.phones a:last-child {
+    padding-left: 27px;
+}
+
+.phones a {
+    margin-bottom: 15px;
+}
+
+.phones img,
+.mails-skypes img {
+    margin-right: 10px;
+}
+
+.copy {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #dcdce6;
+    color:#b1b2d1;
+}

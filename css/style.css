@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Arial,sans-serif;
     font-size: 14px;
 }
 
@@ -25,8 +25,8 @@ sup {
 }
 
 .header-line_nav ul {
-    padding-left: 0;
     margin: 0;
+    padding-left: 0;
     list-style: none;
 }
 
@@ -36,11 +36,10 @@ sup {
 }
 
 .header-line a {
-    display: inline-block;
     padding: 0 12px;
     color: #b1b2d1;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .header-line_nav a:hover {
@@ -62,7 +61,7 @@ sup {
 }
 
 .social-networks a:hover {
-    transform: scale(1.2);
+    transform : scale(1.2)
 }
 
 .info {
@@ -72,8 +71,8 @@ sup {
 }
 
 .info a {
-    text-decoration: none;
     color: #25252c;
+    text-decoration: none;
 }
 
 .email a {
@@ -110,25 +109,25 @@ sup {
 
 .button a {
     display: inline-block;
-    text-align: center;
-    font-weight: bold;
     padding: 15px;
     width: 200px;
-    font-size: 16px;
-    border-radius: 25px;
     color: #25252c;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
     background-color: #ffffff;
     border: 2px solid #fd8300;
+    border-radius: 25px;
     box-sizing: border-box;
 }
 
 .main-picture {
-    text-align: center;
     padding: 55px 0;
+    text-align: center;  
+    opacity: 0.9; 
     background: url(../img/picture.png);
     background-size: cover;
     background-color: black;
-    opacity: 0.9;
 }
 
 .about-company {
@@ -137,22 +136,22 @@ sup {
 
 .text p {
     width: 677px;
-    font-size: 14px;
     color: #666666;
+    font-size: 14px;
 }
 
 .text h1 {
     font-size: 30px;
-    line-height: 24px;
-    color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
+    line-height: 24px;
+    color: #24242b;
 }
 
 .header-text a {
-    font-size: 14px;
     color: #fd8300;
     font-weight: bold;
+    font-size: 14px;  
 }
 
 .header-text {
@@ -170,36 +169,35 @@ sup {
 }
 
 .offer b {
-    font-size: 30px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
     color: #ffffff;
+    font-size: 30px;
     font-weight: 700;
     font-family: "Roboto Slab";
+    letter-spacing: 2px;
+    text-transform: uppercase;  
 }
 
 .offer p {
-    font-family: 'Roboto Slab', serif;
-    ;
+    font-family: "Roboto Slab";
 }
 
 .offer i {
-    font-size: 14px;
     color: #ffffff;
+    font-size: 14px;
 }
 
 .price b {
-    font-size: 40px;
-    line-height: 24px;
     color: #fd8300;
+    font-size: 40px;
     font-weight: bold;
+    line-height: 24px;
 }
 
 .price i {
-    font-size: 24px;
-    line-height: 24px;
     color: #fd8300;
+    font-size: 24px;
     font-weight: bold;
+    line-height: 24px;
 }
 
 .main-houses {
@@ -211,11 +209,10 @@ sup {
 }
 
 .houses-for-sale a {
-    font-size: 16px;
-    text-decoration: none;
     color: #1f1f56;
+    font-size: 16px;
     font-weight: bold;
-    font-family: "Arial";
+    text-decoration: none;
 }
 
 .houses-for-sale a:hover {
@@ -225,25 +222,20 @@ sup {
 .houses-for-sale p {
     margin: 0;
     margin-bottom: 3px;
-    font-size: 13px;
     color: #9999a6;
-    font-family: "Arial";
-}
-
-figcaption h3 {
-    padding-top: 7px;
+    font-size: 13px;
 }
 
 .around p {
     margin: 0;
-    background-color: #1f1f56;
-    color: #fff;
     padding: 15px;
+    color: #fff;
+    background-color: #1f1f56;
 }
 
 .around a:hover {
-    background-color: #fd8300;
     color: #fff;
+    background-color: #fd8300;
     border-color: transparent;
 }
 
@@ -258,13 +250,63 @@ figcaption h3 {
 .open {
     display: none;
 }
+    
+.open_1 {
+    display:none
+}
+    
+.open_2 {
+    display: none;
+}
+
+.open_3 {
+    display: none;
+}
+
+.open_4 {
+    display: none;
+}
+
+.open_5 {
+    display: none;
+}
 
 aside .open a {
     padding-left: 30px;
     color: #666;
 }
 
-.open a:hover {
+aside .open_1 a {
+    padding-left: 30px;
+    color: #666;
+}
+
+aside .open_2 a {
+    padding-left: 30px;
+    color: #666;
+}
+
+aside .open_3 a {
+    padding-left: 30px;
+    color: #666;
+}
+
+aside .open_4 a {
+    padding-left: 30px;
+    color: #666;
+}
+
+aside .open_5 a {
+    padding-left: 30px;
+    color: #666;
+}
+
+.open
+.open_1
+.open_2
+.open_3
+.open_4
+.open_5 a:hover {
     background-color: #cecedd;
 }
 
@@ -279,28 +321,28 @@ li:hover ul {
 }
 
 .around ul {
-    list-style: none;
     margin: 0;
     padding: 0;
+    list-style: none;
 }
 
 .around a {
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    text-decoration: none;
     color: #25252c;
+    text-decoration: none;
     border-bottom: 1px solid #cdcddd;
 }
 
 span {
     display: inline-block;
-    width: 6px;
     height: 6px;
+    width: 6px; 
     border: 1px solid #666;
-    transform: rotate(-45deg);
     border-top-color: transparent;
     border-left-color: transparent;
+    transform: rotate(-45deg);
     transition: .5s;
 }
 
@@ -309,25 +351,31 @@ li :hover span {
 }
 
 .one-part a:hover {
-    text-decoration: underline;
     color: #fd8300;
+    text-decoration: underline;
 }
 
 .two-part a:hover {
-    text-decoration: underline;
     color: #fd8300;
+    text-decoration: underline;
 }
 
 .houses h2 {
+    color: #24242b;
     font-size: 24px;
     line-height: 24px;
-    color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
 }
 
 .houses-for-sale {
     display: flex;
+}
+
+figcaption h3 {
+    margin: 0;
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 .houses-for-sale figure {
@@ -339,9 +387,8 @@ li :hover span {
 }
 
 .general li {
-    list-style: none;
-    color: #666666;
     text-decoration: none;
+    list-style: none;
 }
 
 .general {
@@ -354,12 +401,12 @@ li :hover span {
 }
 
 .general a {
-    text-decoration: none;
     color: #666;
+    text-decoration: none;
 }
 
 .general li {
-    padding-right: 40px;
+    padding-right: 30px;
 }
 
 .general ul {
@@ -368,7 +415,7 @@ li :hover span {
 }
 
 .find {
-    padding: 35px;
+    padding: 37px;
 }
 
 .find li {
@@ -387,11 +434,6 @@ li :hover span {
 
 .mails-skypes a {
     color: #25252c;
-}
-
-
-.phones a:last-child {
-    padding-left: 17px;
 }
 
 .mail a {
@@ -417,9 +459,9 @@ li :hover span {
 }
 
 .copy {
-    margin: 0;
     display: flex;
     justify-content: center;
+    margin: 0;
+    color: #9999a6;
     background-color: #dcdce6;
-    color:#b1b2d1;
 }

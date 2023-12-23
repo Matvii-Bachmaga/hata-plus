@@ -1,461 +1,179 @@
-body {
-    margin: 0;
-    font-family: Arial,sans-serif;
-    font-size: 14px;
-}
 
-sup {
-    font-size: 0.6em;
-}
-
-.wrapper {
-    margin: auto;
-    max-width: 960px;
-}
-
-.header-line {
-    padding: 16px 0;
-    background-color: #1f1f56;
+header {
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
 }
 
 .header-line_nav {
     display: flex;
     justify-content: space-between;
-    margin: 0 -12px;
-}
-
-.header-line_nav ul {
-    margin: 0;
-    padding-left: 0;
-    list-style: none;
-}
-
-.header-line li {
-    display: inline-block;
-    transition: 0.5s;
-}
-
-.header-line a {
-    padding: 0 12px;
-    color: #b1b2d1;
-    text-decoration: none;
-    transition: 0.5s;
-}
-
-.header-line_nav a:hover {
-    color: #fd8300;
-}
-
-.header-info {
-    display: inline;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.button a:hover {
-    color: #fd8300;
+    margin-left: -12px;
 }
 
 .button a {
     transition: all 1s ease;
 }
 
-.social-networks a:hover {
-    transform : scale(1.2)
-}
-
-.info {
+.social {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: space-between;
+    width: 96px;
 }
 
-.info a {
-    color: #25252c;
-    text-decoration: none;
-}
-
-.email a {
-    text-decoration: underline;
-}
-
-.email-skype p {
-    margin: 0;
-}
-
-.phone a {
+.social a {
     display: block;
-    margin-bottom: 10px;
-    font-size: 16px;  
-}
-
-.phone img,
-.email-skype img {
-    margin-right: 12px;
-}
-
-.phone a:last-child {
-    padding-left: 27px;
-}
-
-.email a {
-    margin-bottom: 15px;
-}
-
-.email-skype p,
-.skype a {
-    margin-bottom: 10px;
-}
-
-.button a {
-    display: inline-block;
-    padding: 15px;
-    width: 200px;
-    color: #25252c;
-    font-weight: bold;
-    font-size: 16px;
-    text-align: center;
-    background-color: #ffffff;
-    border: 2px solid #fd8300;
-    border-radius: 25px;
-    box-sizing: border-box;
-}
-
-.main-picture {
-    padding: 55px 0;
-    text-align: center;  
-    opacity: 0.9; 
-    background: url(../img/picture.png);
-    background-size: cover;
-    background-color: black;
-}
-
-.about-company {
-    margin-bottom: 45px;
-}
-
-.text p {
-    width: 677px;
-    color: #666666;
-    font-size: 14px;
-}
-
-.text h1 {
-    font-size: 30px;
-    font-weight: 700;
-    font-family: "Roboto Slab";
-    line-height: 24px;
-    color: #24242b;
-}
-
-.header-text a {
-    color: #fd8300;
-    font-weight: bold;
-    font-size: 14px;  
-}
-
-.header-text {
-    margin-bottom: 34px;
-}
-
-.hr {
-    margin-bottom: 25px;
-    border-bottom: 1px solid color #e4e4ec;
-}
-
-.flex {
-    display: flex;
-    padding-top: 38px;
-}
-
-.offer b {
-    color: #ffffff;
-    font-size: 30px;
-    font-weight: 700;
-    font-family: "Roboto Slab";
-    letter-spacing: 2px;
-    text-transform: uppercase;  
-}
-
-.offer p {
-    font-family: "Roboto Slab";
-}
-
-.offer i {
-    color: #ffffff;
-    font-size: 14px;
-}
-
-.price b {
-    color: #fd8300;
-    font-size: 40px;
-    font-weight: bold;
-    line-height: 24px;
-}
-
-.price i {
-    color: #fd8300;
-    font-size: 24px;
-    font-weight: bold;
-    line-height: 24px;
-}
-
-.main-houses {
-    display: flex;
-}
-
-.houses figure {
-    margin: 0;
-}
-
-.houses-for-sale a {
-    color: #1f1f56;
-    font-size: 16px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.houses-for-sale a:hover {
-    text-decoration: underline;
-}
-
-.houses-for-sale p {
-    margin: 0;
-    margin-bottom: 3px;
-    color: #9999a6;
-    font-size: 13px;
-}
-
-.around p {
-    margin: 0;
-    padding: 15px;
-    color: #fff;
-    background-color: #1f1f56;
-}
-
-.around a:hover {
-    color: #fff;
-    background-color: #fd8300;
-    border-color: transparent;
-}
-
-.around li {
-    width: 100%;
-}
-
-.around li:last-child a {
-    border: none;
-}
-
-.open {
-    display: none;
-}
-    
-.open_1 {
-    display:none
-}
-    
-.open_2 {
-    display: none;
-}
-
-.open_3 {
-    display: none;
-}
-
-.open_4 {
-    display: none;
-}
-
-.open_5 {
-    display: none;
-}
-
-aside .open a {
-    padding-left: 30px;
-    color: #666;
-}
-
-aside .open_1 a {
-    padding-left: 30px;
-    color: #666;
-}
-
-aside .open_2 a {
-    padding-left: 30px;
-    color: #666;
-}
-
-aside .open_3 a {
-    padding-left: 30px;
-    color: #666;
-}
-
-aside .open_4 a {
-    padding-left: 30px;
-    color: #666;
-}
-
-aside .open_5 a {
-    padding-left: 30px;
-    color: #666;
-}
-
-.open
-.open_1
-.open_2
-.open_3
-.open_4
-.open_5 a:hover {
-    background-color: #cecedd;
-}
-
-.around {
-    height: min-content;
-    width: 220px;
-    background-color: #e4e4ec;
-}
-
-li:hover ul {
-    display: block;
-}
-
-.around ul {
-    margin: 0;
     padding: 0;
-    list-style: none;
-}
-
-.around a {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px;
-    color: #25252c;
-    text-decoration: none;
-    border-bottom: 1px solid #cdcddd;
-}
-
-span {
-    display: inline-block;
-    height: 6px;
-    width: 6px; 
-    border: 1px solid #666;
-    border-top-color: transparent;
-    border-left-color: transparent;
-    transform: rotate(-45deg);
+    background: url(../img/sprite.png);
     transition: .5s;
 }
 
-li :hover span {
-    transform: rotate(45deg);
+a.facebook:hover,
+a.twitter:hover,
+a.instagram:hover {
+    background-position-y: -21px;
 }
 
-.one-part a:hover {
-    color: #fd8300;
-    text-decoration: underline;
+.social li:nth-child(1) {
+    height: 21px;
 }
 
-.two-part a:hover {
-    color: #fd8300;
-    text-decoration: underline;
+.social li:nth-child(2) {
+    height: 19px;
 }
 
-.houses h2 {
-    color: #24242b;
+.social li:nth-child(3) {
+    height: 21px;
+}
+
+a.facebook {
+    width: 10px;
+    height: 21px;
+}
+
+a.facebook :hover {
+    background-position: 0 -21;
+}
+
+a.twitter {
+    width: 18px;
+    height: 19px;
+    background-position: -14px 0;
+}
+
+a.instagram {
+    width: 20px;
+    height: 21px;
+    background-position: -32px 0;
+}
+
+.phone a {
+    position: relative;
+}
+
+h1 {
     font-size: 24px;
     line-height: 24px;
+    color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
 }
 
-.houses-for-sale {
-    display: flex;
+.comfort p {
+    width: 942px;
+    font-size: 14px;
+    color: #666666;
 }
 
-figcaption h3 {
-    margin: 0;
-    padding-top: 15px;
-    padding-bottom: 10px;
+table {
+    border-collapse: collapse;
+    width: 100%;
 }
 
-.houses-for-sale figure {
-    margin: 0;
+th {
+    color: #fff;
+    font-weight: 700;
+    background-color: #1f1f56;
 }
 
-.two figcaption {
-    padding: 0 30px;
+th:not(:last-child) {
+    text-align: left;
 }
 
-.general li {
-    text-decoration: none;
-    list-style: none;
-}
-
-.general {
-    background-color: #ededf5;
-}
-
-.general,
-.flex {
-    justify-content: space-between;
-}
-
-.general a {
+td {
     color: #666;
-    text-decoration: none;
+}
+
+tr:hover td {
+    color: #fff;
+}
+
+th:last-child,
+td:last-child {
+    padding-right: 15px;
+    text-align: right;
+}
+
+th,
+td {
+    font-size: 14px;
+    padding: 15px;
+}
+
+tr {
+    box-shadow: inset 0px -1px 0px #cecedd;
+    background-color: #e4e4ec;
+}
+
+tr:hover {
+    background-color: #fd8300;
+}
+
+.name {
+    width: 30%;
+}
+
+.hour {
+    margin-bottom: 30px;
+}
+.chart {
+    margin-bottom: 34px;
+}
+
+.time p {
+    width: 942px;
+    font-size: 13px;
+    color: #666;
+}
+
+main a {
+    font-size: 14px;
+    text-decoration: underline;
+    color: #fd8300;
+    font-weight: bold;
+}
+
+.houses-for-sale {
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 45px;
 }
 
 .general li {
+    list-style: none;
+    padding-right: 55px;
+}
+
+.mails-skypes {
     padding-right: 30px;
 }
 
-.general ul {
-    margin: 0;
-    padding: 0;
-}
-
-.find {
-    padding: 37px;
-}
-
-.find li {
-    margin-bottom: 5px;
-}
-
-.phones {
-    margin: 0;
-}
-
-.phones a {
-    display: block;
-    color: #25252c;
-    font-size: 16px;
-}
-
-.mails-skypes a {
-    color: #25252c;
-}
-
-.mail a {
-    text-decoration: underline;
-}
-
-.mails-skypes p {
-    margin: 0;
-    margin-bottom: 14px;
-}
-
-.phones a:last-child {
-    padding-left: 27px;
+.flex {
+    display: flex;
+    justify-content: space-between;
 }
 
 .phones a {
     margin-bottom: 15px;
-}
-
-.phones img,
-.mails-skypes img {
-    margin-right: 10px;
 }
 
 .copy {

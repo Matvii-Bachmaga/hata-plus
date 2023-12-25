@@ -1,0 +1,89 @@
+header {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.hour h1 {
+    font-size: 24px;
+    line-height: 24px;
+    color: #24242b;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.comfort p,
+td  {
+    color: #666;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 3px;
+}
+
+th {
+    color: #fff;
+    font-weight: 700;
+    background-color: #1f1f56;
+}
+
+th:not(:last-child) {
+    text-align: left;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+tr:hover td {
+    color: #fff;
+}
+
+th:last-child,
+td:last-child {
+    padding-right: 15px;
+    text-align: right;
+}
+
+th,
+td {
+    font-size: 14px;
+    padding: 15px;
+}
+
+tr {
+    border-bottom: 1px solid #cecedd;
+    background-color: #e4e4ec;
+}
+
+tr:hover {
+    background-color: #fd8300;
+}
+
+.name {
+    width: 30%;
+}
+
+.hour,
+.rent,
+.comfort {
+    margin-bottom: 30px;
+}
+
+.chart,
+hr {
+    margin-bottom: 35px;
+}
+
+.chart a {
+    text-decoration: underline;
+    color: #fd8300;
+    font-weight: bold;
+}
+
+.chart a:hover {
+    color: #24242b;
+    transition: .5s;
+}

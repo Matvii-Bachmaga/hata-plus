@@ -2,12 +2,26 @@
     box-sizing: border-box;
 }
 
-.our-office {
-    font-size: 14px;
+.our-office,
+h1,
+.consultation,
+.requisition {
     color: #24242b;
     font-weight: 700;
     font-family: "Roboto Slab";
     margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    width: 900px;
+    margin-bottom: 35px;
 }
 
 .contacts .office a {
@@ -22,43 +36,22 @@
     font-size: 16px;
     text-decoration: underline;
     color: #25252c;
-    font-family: "Arial";
 }
 
-.phone {
+.phone-number {
     font-size: 18px;
     color: #25252c;
     font-weight: bold;
-    font-family: "Arial";
-    margin-bottom: 13px;
+    margin-bottom: 12px;
 }
 
 address {
-    font-size: 14px;
     color: #666666;
-    font-family: "Arial";
     font-style: normal;
     margin-bottom: 15px;
 }
 
-.consultation {
-    font-size: 14px;
-    color: #24242b;
-    font-weight: 700;
-    font-family: "Roboto Slab";
-    margin-bottom: 20px;
-}
-
-.requisition {
-    font-size: 14px;
-    color: #24242b;
-    font-weight: 700;
-    font-family: "Roboto Slab";
-    margin-bottom: 20px;
-}
-
 .nomer {
-    font-size: 14px;
     line-height: 21px;
     color: #666;
 }
@@ -67,19 +60,13 @@ address {
     max-width: 254px;
 }
 
-header {
-    margin-bottom: 40px;
-}
-
-.contacts {
-    display: flex;
-    justify-content: space-between;
-    width: 900px;
-    margin-bottom: 35px;
-}
-
 hr {
     margin-bottom: 35px;
+}
+
+.leave-information {
+    display: flex;
+    justify-content: space-between;
 }
 
 .map,
@@ -101,7 +88,6 @@ iframe {
 
 .tips {
     padding: 11px 14px;
-    font-size: 13px;
     color: #9999a6;
     font-style: italic;
     font-family: Arial, Helvetica, sans-serif;
@@ -127,11 +113,6 @@ textarea {
     width: 100%;
 }
 
-.leave-information {
-    display: flex;
-    justify-content: space-between;
-}
-
 textarea {
     resize: vertical;
     height: 100px;
@@ -141,15 +122,10 @@ textarea {
 
 form h2 {
     font-size: 14px;
-    line-height: 24px;
-    color: #24242b;
-    font-weight: 700;
-    font-family: "Roboto Slab";
     margin-top: 0;
 }
 
 .news .button {
-    font-size: 14px;
     padding: 15px;
     color: #fff;
     font-weight: bold;
@@ -179,6 +155,7 @@ form h2 {
 }
 
 .wish {
+    column-gap: 10px;
     font-size: 13px;
     color: #666666;
 }

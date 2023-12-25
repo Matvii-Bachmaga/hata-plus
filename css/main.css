@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: Arial,sans-serif;
+    font-family: Arial, sans-serif;
     font-size: 14px;
 }
 
@@ -56,20 +56,65 @@ header {
     color: #fd8300;
 }
 
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96px;
+}
+
+.social a:hover {
+    transform: scale(1.2)
+}
+
+.social a {
+    display: block;
+    padding: 0;
+    background: url(../img/sprite.png);
+    transition: .5s;
+}
+
+a.facebook:hover,
+a.twitter:hover,
+a.instagram:hover {
+    background-position-y: -21px;
+}
+
+.social li:nth-child(1) {
+    height: 19px;
+}
+
+.social li:nth-child(2) {
+    height: 13px;
+}
+
+.social li:nth-child(3) {
+    height: 17px;
+}
+
+a.facebook {
+    width: 10px;
+    height: 21px;
+}
+
+a.facebook :hover {
+    background-position: 0 -22;
+}
+
+a.twitter {
+    width: 18px;
+    height: 17px;
+    background-position: -13px 0;
+}
+
+a.instagram {
+    width: 19px;
+    height: 21px;
+    background-position: -33px 0;
+}
+
 .header-info {
     padding: 15px 0;
-}
-
-.button a:hover {
-    color: #fd8300;
-}
-
-.button a {
-    transition: all 1s ease;
-}
-
-.social-networks a:hover {
-    transform : scale(1.2)
 }
 
 .info {
@@ -81,14 +126,6 @@ header {
 .info a {
     color: #25252c;
     text-decoration: none;
-}
-
-.email a {
-    text-decoration: underline;
-}
-
-.email-skype p {
-    margin: 0;
 }
 
 .phone-icon::before {
@@ -105,30 +142,79 @@ header {
 
 .phone a {
     display: block;
-    margin-bottom: 10px;
-    font-size: 16px;  
+    color: #25252c;
+    font-size: 16px;
+    position: relative;
+    text-decoration: none;
 }
 
-.phone img,
-.email-skype img {
-    margin-right: 12px;
+.phone {
+    margin: 0;
 }
 
 .phone a:first-child {
     padding-left: 27px;
+    margin-bottom: 12px;
 }
 
 .phone a:last-child {
     padding-left: 27px;
 }
 
+.email-icon::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    width: 17px;
+    height: 13px;
+    background: url(../img/sprite.png) no-repeat;
+    background-position: -21px;
+    background-position-y: -47px;
+    transform: translateY(-50%);
+}
+
 .email a {
+    position: relative;
     margin-bottom: 15px;
+    text-decoration: underline;
 }
 
 .email-skype p,
+.emails-skypes p {
+    margin: 15px;
+}
+
+.email-skype {
+    padding-left: 20px;
+}
+
+.emails-skypes p {
+    margin-top: 0;
+}
+
+.email-skype a,
+.emails-skypes a {
+    padding-right: 35px;
+    color: #25252c;
+    text-decoration: none;
+}
+
+.skype-icon::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    width: 18px;
+    height: 19px;
+    background: url(../img/sprite.png) no-repeat;
+    background-position: -40px;
+    background-position-y: -44px;
+    transform: translateY(-50%);
+}
+
 .skype a {
-    margin-bottom: 10px;
+    position: relative;
 }
 
 .button a {
@@ -145,10 +231,18 @@ header {
     box-sizing: border-box;
 }
 
+.button a:hover {
+    color: #fd8300;
+}
+
+.button a {
+    transition: all 1s ease;
+}
+
 .main-picture {
     padding: 55px 0;
-    text-align: center;  
-    opacity: 0.9; 
+    text-align: center;
+    opacity: 0.9;
     background: url(../img/picture.png);
     background-size: cover;
     background-color: black;
@@ -160,11 +254,13 @@ header {
 
 .text p {
     width: 677px;
-    color: #666666;
+    color: #666;
     font-size: 14px;
+    line-height: 24px;
 }
 
-.text h1 {
+.text h1,
+.houses h2 {
     font-size: 30px;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -172,10 +268,19 @@ header {
     color: #24242b;
 }
 
+.text {
+    margin-bottom: 25px;
+}
+
 .header-text a {
     color: #fd8300;
     font-weight: bold;
-    font-size: 14px;  
+    font-size: 14px;
+}
+
+.header-text a:hover {
+    color: #24242b;
+    transition: .5s;
 }
 
 .header-text {
@@ -184,11 +289,8 @@ header {
 
 hr {
     margin-bottom: 25px;
-    border-bottom: 1px solid color #e4e4ec;
-}
-
-.flex {
-    display: flex;
+    border: none;
+    border-top: 1px solid #e4e4ec;
 }
 
 .offer b {
@@ -197,7 +299,7 @@ hr {
     font-weight: 700;
     font-family: "Roboto Slab";
     letter-spacing: 2px;
-    text-transform: uppercase;  
+    text-transform: uppercase;
 }
 
 .offer p {
@@ -207,6 +309,7 @@ hr {
 .offer i {
     color: #ffffff;
     font-size: 14px;
+    font-style: normal;
 }
 
 .price b {
@@ -221,14 +324,22 @@ hr {
     font-size: 24px;
     font-weight: bold;
     line-height: 24px;
-}
-
-.main-houses {
-    display: flex;
+    font-style: normal;
 }
 
 .houses figure {
     margin: 0;
+}
+
+.houses .two {
+    padding: 0 28px;
+}
+
+.houses-for-sale {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 45px;
 }
 
 .houses-for-sale a {
@@ -249,11 +360,24 @@ hr {
     font-size: 13px;
 }
 
+.open_1 .finished {
+    border: none;
+}
+
+.open_1 .last {
+    border: none;
+}
+
+.open_1 .last:hover {
+    border-radius: 0 0 3px 3px;
+}
+
 .around p {
     margin: 0;
     padding: 15px;
     color: #fff;
     background-color: #1f1f56;
+    border-radius: 3px 3px 0 0;
 }
 
 .around a:hover {
@@ -266,14 +390,14 @@ hr {
     width: 100%;
 }
 
-.around li:last-child a {
-    border: none;
+.around:last-child {
+    border-radius: 0 0 3px 3px;
 }
 
 .open {
     display: none;
 }
- 
+
 aside .open a {
     padding-left: 30px;
     color: #666;
@@ -311,7 +435,7 @@ li:hover ul {
 span {
     display: inline-block;
     height: 6px;
-    width: 6px; 
+    width: 6px;
     border: 1px solid #666;
     border-top-color: transparent;
     border-left-color: transparent;
@@ -323,26 +447,14 @@ li :hover span {
     transform: rotate(45deg);
 }
 
-.one-part a:hover {
-    color: #fd8300;
-    text-decoration: underline;
-}
-
+.one-part a:hover,
 .two-part a:hover {
     color: #fd8300;
     text-decoration: underline;
 }
 
 .houses h2 {
-    color: #24242b;
     font-size: 24px;
-    line-height: 24px;
-    font-weight: 700;
-    font-family: "Roboto Slab";
-}
-
-.houses-for-sale {
-    display: flex;
 }
 
 figcaption h3 {
@@ -355,13 +467,8 @@ figcaption h3 {
     margin: 0;
 }
 
-.two figcaption {
-    padding: 0 30px;
-}
-
 .general li {
     padding-right: 30px;
-    text-decoration: none;
     list-style: none;
 }
 
@@ -369,12 +476,8 @@ figcaption h3 {
     background-color: #ededf5;
 }
 
-.general,
-.flex {
-    justify-content: space-between;
-}
-
-.general a {
+.one-part a,
+.two-part a {
     color: #666;
     text-decoration: none;
 }
@@ -384,48 +487,17 @@ figcaption h3 {
     padding: 0;
 }
 
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
 .find {
-    padding: 37px 0;
+    padding: 35px 0;
 }
 
 .find li {
-    margin-bottom: 5px;
-}
-
-.phones {
-    margin: 0;
-}
-
-.phones a {
-    display: block;
-    color: #25252c;
-    font-size: 16px;
-}
-
-.mails-skypes a {
-    color: #25252c;
-}
-
-.mail a {
-    text-decoration: underline;
-}
-
-.mails-skypes p {
-    margin: 0;
-    margin-bottom: 14px;
-}
-
-.phones a:last-child {
-    padding-left: 27px;
-}
-
-.phones a {
-    margin-bottom: 15px;
-}
-
-.phones img,
-.mails-skypes img {
-    margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .copy {

@@ -140,6 +140,16 @@ a.instagram {
     transform: translateY(-50%);
 }
 
+.phone::after {
+    content: "";
+    position: absolute;
+    top: 3%;
+    right: -17%;
+    width: 1px;
+    height: 52px;
+    background-color: #e4e4ec;
+}
+
 .phone a {
     display: block;
     color: #25252c;
@@ -149,6 +159,7 @@ a.instagram {
 }
 
 .phone {
+    position: relative;
     margin: 0;
 }
 
@@ -197,7 +208,6 @@ a.instagram {
 .emails-skypes a {
     padding-right: 35px;
     color: #25252c;
-    text-decoration: none;
 }
 
 .skype-icon::before {
@@ -215,6 +225,7 @@ a.instagram {
 
 .skype a {
     position: relative;
+    text-decoration: none;
 }
 
 .button a {
